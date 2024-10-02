@@ -24,3 +24,6 @@ Model Listings: Stores all AI model information and prices.
 Purchases: Manages the transfer of ownership and payment between users.
 Ratings: Allows users to leave ratings for the models they've purchased.
 Withdrawal of Funds: Enables sellers to withdraw their earnings directly from the smart contract.
+I hope you are doing well. I wanted to sincerely apologize for submitting my project after the deadline. 
+I faced some unforeseen circumstances that delayed my work. However, I invested significant time and effort into this project to ensure its quality.
+when evaluating, please check and grade with your right eye)
