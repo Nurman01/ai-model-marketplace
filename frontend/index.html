@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Model Marketplace</title>
+  <!-- Include the Web3.js library -->
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.6.0/dist/web3.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>AI Model Marketplace</h1>
+
+  <!-- List Model Form -->
+  <form id="listModelForm">
+    <h2>List a New Model</h2>
+    <label for="modelName">Model Name:</label>
+    <input type="text" id="modelName" required>
+    <label for="modelDescription">Model Description:</label>
+    <input type="text" id="modelDescription" required>
+    <label for="modelPrice">Model Price (in Wei):</label>
+    <input type="number" id="modelPrice" required>
+    <button type="submit">List Model</button>
+  </form>
+
+  <hr>
+
+  <!-- Purchase Model Form -->
+  <form id="purchaseModelForm">
+    <h2>Purchase a Model</h2>
+    <label for="purchaseModelId">Model ID:</label>
+    <input type="number" id="purchaseModelId" required>
+    <label for="purchasePrice">Price (in Wei):</label>
+    <input type="number" id="purchasePrice" required>
+    <button type="submit">Purchase Model</button>
+  </form>
+
+  <hr>
+
+  <!-- Rate Model Form -->
+  <form id="rateModelForm">
+    <h2>Rate a Model</h2>
+    <label for="rateModelId">Model ID:</label>
+    <input type="number" id="rateModelId" required>
+    <label for="modelRating">Rating (1-5):</label>
+    <input type="number" id="modelRating" min="1" max="5" required>
+    <button type="submit">Rate Model</button>
+  </form>
+
+  <hr>
+
+  <!-- View Model Details Form -->
+  <form id="viewModelDetailsForm">
+    <h2>View Model Details</h2>
+    <label for="viewModelId">Model ID:</label>
+    <input type="number" id="viewModelId" required>
+    <button type="submit">View Details</button>
+  </form>
+
+  <div id="modelDetails"></div>
+
+  <hr>
+
+  <!-- Withdraw Funds Button -->
+  <button id="withdrawButton">Withdraw Funds</button>
+
+  <hr>
+
+  <!-- Display Listed Models -->
+  <h2>Available Models</h2>
+  <div id="modelsList"></div>
+
+  <!-- Include the JavaScript file -->
+  <script src="app.js"></script>
+</body>
+</html>
